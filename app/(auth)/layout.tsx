@@ -1,4 +1,5 @@
 import { PageContainer } from "@/components/ui/page-container";
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 interface AuthLayoutProps {
@@ -13,7 +14,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         <div className="w-1/2 relative flex items-center justify-center">
           <div className="absolute inset-0 flex items-center justify-center">
             {/* <Logo size="lg" /> */}
-            The logo will appear here
+            <Image src="/bird_2.jpg" alt="logo" width={150} height={150} />
           </div>
           {/* Vertical red line */}
           <div className="absolute right-0 h-full w-0.5 flex items-center justify-center">

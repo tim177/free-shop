@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { PageContainer } from "@/components/ui/page-container";
+import Image from "next/image";
 // import { Logo } from "@/components/logo"
 
 export default function WelcomePage() {
@@ -17,8 +18,7 @@ export default function WelcomePage() {
       <div className="w-full max-w-3xl bg-gray-100 rounded-3xl overflow-hidden shadow-lg">
         <div className="border-2 border-blue-400 rounded-3xl m-2 p-8">
           <div className="flex flex-col items-center justify-center space-y-6 text-center">
-            {/* <Logo size="md" /> */}
-            Logo here🪵
+            <Image src="/bird_2.jpg" alt="logo" width={150} height={150} />
             <div className="space-y-2">
               <h1 className="text-3xl font-bold">Welcome</h1>
               <p className="text-xl text-orange-500 font-medium">

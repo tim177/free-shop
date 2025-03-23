@@ -155,9 +155,7 @@ export default function ProfilePage() {
               <Camera className="h-4 w-4" />
             </label>
           </div>
-
           <p className="text-primary font-medium">Upload Profile Picture</p>
-
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
@@ -237,6 +235,7 @@ export default function ProfilePage() {
               </Button>
             </form>
           </Form>
+          Skip button to view go dashboard
         </div>
       </CardContainer>
     </PageContainer>
